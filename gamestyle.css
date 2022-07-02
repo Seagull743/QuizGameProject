@@ -1,0 +1,21 @@
+html, h1{
+    font-weight: 300;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prefix {
+    text-align: center;
+}
+
+#counter, #score {
+    text-align: center;
+}
+
+.answer-prefix {
+    float: left;
+    
+}
