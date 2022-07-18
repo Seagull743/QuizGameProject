@@ -1,14 +1,30 @@
 body{
-    color: rgb(192,152,226);
     background-color: rgb(1,21,40);     
 }
 
-.title {
-    margin-top: 100px;
+#title {
+    margin-top: 125px;
     display: flex;
     justify-content: center;
+    color: greenyellow;
+    font-weight: 300px;
 }
 
+#score {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(192,152,226);
+}
+
+
+#phrase {
+    font-size: 50px;
+    margin-top: 175px;
+    display: flex;
+    justify-content: center;
+    color: rgb(192,152,226);
+}
 
 .centerbtn {
     display: flex;
@@ -17,7 +33,6 @@ body{
 }
 
 .buttons {
-    margin-top: 300px;
     width: 300px;
     height: 100px;
     margin-bottom: 50px;
