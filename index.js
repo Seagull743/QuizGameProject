@@ -1,7 +1,17 @@
 
 let choseHarderQuestion = false;
-var normal = document.getElementById("normal");
-var difficult = document.getElementById("difficult");
-var buttons = document.getElementsByClassName("buttons")
+let buttons = document.getElementsByClassName("buttons");
 
-// need to add event listener to choose the quetion difficulty
+for (let button of buttons) {
+    button.addEventListener("click", function onclick() {
+        (button.dataset.mode == "difficult") ? choseHarderQuestion = true : choseHarderQuestion = false; 
+        setTimeout(() => { 
+            localStorage.setItem("modequestions", choseHarderQuestion);
+            window.location.replace("game.html");
+            startGame();
+          }, "1000")
+    });
+}
+
+
+console.log("Loaded Index");

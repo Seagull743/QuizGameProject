@@ -106,7 +106,7 @@ let questionCounter = 0;
 
 const MAX_QUESTIONS = 3;
 let answerAvailable = true;
-let choseHarderQuestion = false;
+let choseHarderQuestion = localStorage.getItem("modequestions");
  
 
 
