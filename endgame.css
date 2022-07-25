@@ -1,6 +1,6 @@
-body{
-    background-color: rgb(1,21,40);     
-}
+body, html{
+    background-image: linear-gradient(to right, #0f0338, rgb(1,21,40));
+}   
 
 #title {
     margin-top: 125px;

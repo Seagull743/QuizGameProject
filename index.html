@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -18,11 +18,27 @@
             <h1 class="title"> Quiz Game</h1>
         </div>
         <div class="row">
-            <div class="col-md-6 centerbtn">
-                <input type="button" class="buttons" data-mode="normal" value="Normal">
+            <div class="col-md-12">
+                <h1 class="howto">How to Play</h1>
             </div>
-            <div class="col-md-6 centerbtn">
-                <input type="button" class="buttons" data-mode="difficult" value="Difficult">
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 description">
+            <ol id="margin"> 
+                <li>You will be asked one question at a time.</li>
+                <li>The question will be multi choice.</li>
+                <li>You will only have one attempt to guess the question.</li>
+                <li>Your correct answers will be displayed above as score.</li>
+                <li>To start the game choose the difficulty of your questions down below.</li>
+            </ol>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 centerbtn">
+                <input type="button" class="buttons space-right" data-mode="normal" id="normal" value="Normal">
+                <input type="button" class="buttons" data-mode="difficult" id="diff" value="Difficult">
             </div>
         </div>
     </div>

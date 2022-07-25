@@ -107,20 +107,20 @@ let questionCounter = 0;
 const MAX_QUESTIONS = 3;
 let answerAvailable = true;
 let choseHarderQuestion = localStorage.getItem("modequestions");
- 
+ console.log(choseHarderQuestion);
 
 
 
-const startGame = () => {
+let startGame = () => {
     questionCounter = 0;
     score = 0;
-    (!choseHarderQuestion) ? quizquestions = GetRandomQuestions(questions, MAX_QUESTIONS) : quizquestions = GetRandomQuestions(difficultquestions, MAX_QUESTIONS);
+    (choseHarderQuestion) ? quizquestions = GetRandomQuestions(difficultquestions, MAX_QUESTIONS) : quizquestions = GetRandomQuestions(questions, MAX_QUESTIONS);
     getNewQuestion();
 };
  
  
 // for getting random questions in an array https://stackoverflow.com/questions/19269545/how-to-get-a-number-of-random-elements-from-an-array
-const GetRandomQuestions = (arr, n) => {
+let GetRandomQuestions = (arr, n) => {
     let len = arr.length;
     if (n > len) {
         throw new LenError (
@@ -134,7 +134,7 @@ const GetRandomQuestions = (arr, n) => {
  
  
 //Checks if there is a question to ask and if there is call it then minus the length by one
-const getNewQuestion = () => {
+let getNewQuestion = () => {
  
     //checks if the quiz question length is equal to 0
     // allows me to bring the score variable over to another file https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
