@@ -1,15 +1,27 @@
+@font-face {
+    font-family: GuavaCandy;
+    src: url(../QuizGameProject/fonts/Guava\ Candy.ttf);
+  }
+
 html, body{
+    font-family: GuavaCandy;
+    font-weight: lighter;
     color: rgb(192,152,226);
     background-image: linear-gradient(to right, #0f0338, rgb(1,21,40));
 } 
 
 .title {
+    font-family: GuavaCandy;
+    font-weight: bold;
     margin-top: 75px;
     display: flex;
     justify-content: center;
     color: greenyellow;
     font-size: 75px;
-    text-shadow: 3px 2px 2px rgba(157,180,13,0.6);
+    -webkit-text-stroke: 12px rgba(157,180,13,0.6);
+    letter-spacing: 8px;
+     /* text-shadow: 3px 3px 2px rgba(157,180,13,0.6); */
+    transform: rotate(-1deg);
 }
 
 .description {
@@ -33,6 +45,7 @@ html, body{
 .howto {
     display: flex;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .centerbtn {
